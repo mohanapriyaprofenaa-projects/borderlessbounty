@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borderless Bounty Partners | Global Garment Sourcing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        :root {
+            --jungle-green: #004d40;
+            --gold: #c5a059;
+            --dark-jungle: #002e26;
+        }
+
+        .bg-jungle {
+            background-color: var(--jungle-green);
+        }
+
+        .bg-dark-jungle {
+            background-color: var(--dark-jungle);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .border-gold {
+            border-color: var(--gold);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 46, 38, 0.85), rgba(0, 77, 64, 0.7)), url('back.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-card:hover {
+            border-bottom: 4px solid var(--gold);
+            transform: translateY(-10px);
+            transition: all 0.4s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <!-- <nav class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center text-white">
+        <div class="text-2xl font-bold tracking-tighter">Borderless <span class="text-gold"> Bounty</span></div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="index.html" class="text-gold">Home</a>
+            <a href="about.html" class="hover:text-gold transition">About</a>
+            <a href="services.html" class="hover:text-gold transition">Services</a>
+            <a href="contact.html" class="hover:text-gold transition">Contact</a>
+        </div>
+        <a href="contact.html" class="bg-gold px-6 py-2 rounded-full text-sm font-bold hover:shadow-[0_0_15px_rgba(197,160,89,0.5)] transition transform hover:scale-105">GET STARTED</a>
+    </nav> -->
+
+
+
+
+    <div id="header-placeholder"></div>
+    <section class="h-screen hero-gradient flex items-center justify-center text-center text-white px-4">
+        <div data-aos="fade-up" data-aos-duration="1200">
+            <!--<h2 class="text-gold tracking-[0.3em] font-bold mb-4 uppercase text-sm md:text-base">Borderless Bounty Partners</h2>-->
+            <h2 class="text-gold tracking-[0.3em] font-bold mb-4 uppercase text-lg md:text-2xl">Borderless Bounty
+                Partners</h2>
+            <p class="text-gray-300 font-medium mb-2">International Garment Buyer Sourcing & Export Marketing
+                Consultants</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Connecting Garment Manufacturers <br>
+                With <span class="italic font-light text-gold">Verified Global Buyers</span></h1>
+            <p class="max-w-3xl mx-auto text-lg text-gray-200 mb-10 leading-relaxed">We help garment manufacturers
+                identify reliable international buyers, develop export orders, and build long-term global business
+                relationships.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-5">
+                <a href="#services"
+                    class="bg-gold text-white px-10 py-4 rounded-md font-bold hover:bg-white hover:text-jungle transition-all shadow-lg">GET
+                    STARTED</a>
+                <a href="contact.html"
+                    class="border-2 border-white px-10 py-4 rounded-md font-bold hover:bg-white hover:text-jungle transition-all">CONTACT
+                    US</a>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="py-24 px-6 max-w-7xl mx-auto text-center">-->
+    <!--    <div data-aos="fade-up">-->
+    <!--        <h3 class="text-gold font-bold uppercase tracking-widest mb-3">Expertise</h3>-->
+    <!--        <h2 class="text-4xl font-bold text-jungle mb-8">What We Do</h2>-->
+    <!--        <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">-->
+    <!--            We work with garment manufacturers, exporters, and investors to connect them with verified international buyers across <span class="text-jungle font-bold">USA, Europe, Middle East</span>, and other global markets. From buyer sourcing to order confirmation — we handle the complete process professionally.-->
+    <!--        </p>-->
+    <!--    </div>-->
+    <!--</section>-->
+    <!--    <section class="py-24 px-6 relative overflow-hidden bg-white">-->
+    <!--    <div class="absolute inset-0 flex items-center justify-center opacity-[0.08] pointer-events-none">-->
+    <!--        <div class="flex flex-col gap-8 rotate-[-12deg] scale-125">-->
+    <!--            <div class="flex gap-12 animate-marquee whitespace-nowrap">-->
+    <!--                <img src="https://flagcdn.com/us.svg" class="w-32 h-20 grayscale" alt="US">-->
+    <!--                <img src="https://flagcdn.com/gb.svg" class="w-32 h-20 grayscale" alt="UK">-->
+    <!--                <img src="https://flagcdn.com/de.svg" class="w-32 h-20 grayscale" alt="Germany">-->
+    <!--                <img src="https://flagcdn.com/ae.svg" class="w-32 h-20 grayscale" alt="UAE">-->
+    <!--                <img src="https://flagcdn.com/fr.svg" class="w-32 h-20 grayscale" alt="France">-->
+    <!--                <img src="https://flagcdn.com/it.svg" class="w-32 h-20 grayscale" alt="Italy">-->
+    <!--                <img src="https://flagcdn.com/us.svg" class="w-32 h-20 grayscale" alt="US">-->
+    <!--                <img src="https://flagcdn.com/gb.svg" class="w-32 h-20 grayscale" alt="UK">-->
+    <!--            </div>-->
+    <!--            <div class="flex gap-12 animate-marquee-reverse whitespace-nowrap">-->
+    <!--                <img src="https://flagcdn.com/ca.svg" class="w-32 h-20 grayscale" alt="Canada">-->
+    <!--                <img src="https://flagcdn.com/au.svg" class="w-32 h-20 grayscale" alt="Australia">-->
+    <!--                <img src="https://flagcdn.com/sg.svg" class="w-32 h-20 grayscale" alt="Singapore">-->
+    <!--                <img src="https://flagcdn.com/nl.svg" class="w-32 h-20 grayscale" alt="Netherlands">-->
+    <!--                <img src="https://flagcdn.com/be.svg" class="w-32 h-20 grayscale" alt="Belgium">-->
+    <!--                <img src="https://flagcdn.com/dk.svg" class="w-32 h-20 grayscale" alt="Denmark">-->
+    <!--                <img src="https://flagcdn.com/ca.svg" class="w-32 h-20 grayscale" alt="Canada">-->
+    <!--                <img src="https://flagcdn.com/au.svg" class="w-32 h-20 grayscale" alt="Australia">-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <!--    <div class="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white z-0"></div>-->
+
+    <!--    <div class="max-w-7xl mx-auto text-center relative z-10" data-aos="fade-up">-->
+    <!--        <h3 class="text-gold font-bold uppercase tracking-[0.4em] mb-4 text-sm">Expertise</h3>-->
+    <!--        <h2 class="text-4xl md:text-6xl font-bold text-jungle mb-10 tracking-tight">What We Do</h2>-->
+
+    <!--        <p class="text-xl md:text-3xl text-gray-700 leading-relaxed max-w-5xl mx-auto font-medium">-->
+    <!--            We work with garment manufacturers, exporters, and investors to connect them with verified international buyers across -->
+    <!--            <span class="relative inline-block px-2">-->
+    <!--                <span class="relative z-10 text-jungle font-extrabold italic">USA, Europe, Middle East</span>-->
+    <!--                <span class="absolute bottom-1 left-0 w-full h-3 bg-gold/20 -rotate-1"></span>-->
+    <!--            </span> -->
+    <!--            and other global markets. From buyer sourcing to order confirmation — we handle the complete process professionally.-->
+    <!--        </p>-->
+    <!--    </div>-->
+    <!--</section>-->
+    <section class="py-24 px-6 relative overflow-hidden bg-white">
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.2] pointer-events-none">
+            <div class="flex flex-col gap-8 rotate-[-12deg] scale-125">
+                <div class="flex gap-12 animate-marquee whitespace-nowrap">
+                    <img src="https://flagcdn.com/us.svg" class="w-32 h-20 brightness-110" alt="US">
+                    <img src="https://flagcdn.com/gb.svg" class="w-32 h-20 brightness-110" alt="UK">
+                    <img src="https://flagcdn.com/de.svg" class="w-32 h-20 brightness-110" alt="Germany">
+                    <img src="https://flagcdn.com/ae.svg" class="w-32 h-20 brightness-110" alt="UAE">
+                    <img src="https://flagcdn.com/fr.svg" class="w-32 h-20 brightness-110" alt="France">
+                    <img src="https://flagcdn.com/it.svg" class="w-32 h-20 brightness-110" alt="Italy">
+                    <img src="https://flagcdn.com/us.svg" class="w-32 h-20 brightness-110" alt="US">
+                    <img src="https://flagcdn.com/gb.svg" class="w-32 h-20 brightness-110" alt="UK">
+                </div>
+                <div class="flex gap-12 animate-marquee-reverse whitespace-nowrap">
+                    <img src="https://flagcdn.com/ca.svg" class="w-32 h-20 brightness-110" alt="Canada">
+                    <img src="https://flagcdn.com/au.svg" class="w-32 h-20 brightness-110" alt="Australia">
+                    <img src="https://flagcdn.com/sg.svg" class="w-32 h-20 brightness-110" alt="Singapore">
+                    <img src="https://flagcdn.com/nl.svg" class="w-32 h-20 brightness-110" alt="Netherlands">
+                    <img src="https://flagcdn.com/be.svg" class="w-32 h-20 brightness-110" alt="Belgium">
+                    <img src="https://flagcdn.com/dk.svg" class="w-32 h-20 brightness-110" alt="Denmark">
+                    <img src="https://flagcdn.com/ca.svg" class="w-32 h-20 brightness-110" alt="Canada">
+                    <img src="https://flagcdn.com/au.svg" class="w-32 h-20 brightness-110" alt="Australia">
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white z-0"></div>
+
+        <div class="max-w-7xl mx-auto text-center relative z-10" data-aos="fade-up">
+            <h3 class="text-gold font-bold uppercase tracking-[0.4em] mb-4 text-sm">Expertise</h3>
+            <h2 class="text-4xl md:text-6xl font-bold text-jungle mb-10 tracking-tight">What We Do</h2>
+
+            <p class="text-xl md:text-3xl text-gray-700 leading-relaxed max-w-5xl mx-auto font-medium">
+                We work with garment manufacturers, exporters, and investors to connect them with verified international
+                buyers across
+                <span class="relative inline-block px-2">
+                    <span class="relative z-10 text-jungle font-extrabold italic">USA, Europe, Middle East</span>
+                    <span class="absolute bottom-1 left-0 w-full h-3 bg-gold/20 -rotate-1"></span>
+                </span>
+                and other global markets. From buyer sourcing to order confirmation — we handle the complete process
+                professionally.
+            </p>
+        </div>
+    </section>
+
+    <style>
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes marquee-reverse {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .animate-marquee {
+            animation: marquee 60s linear infinite;
+        }
+
+        .animate-marquee-reverse {
+            animation: marquee-reverse 50s linear infinite;
+        }
+    </style>
+
+    <section id="services" class="py-20 bg-white shadow-inner">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-down">
+                <h2 class="text-3xl font-bold text-jungle">Our Core Services</h2>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="service-card p-8 bg-gray-50 rounded-xl text-center shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <i class="fa-solid fa-magnifying-glass text-gold text-3xl mb-4"></i>
+                    <h4 class="font-bold text-jungle text-sm">International Buyer Sourcing</h4>
+                </div>
+                <div class="service-card p-8 bg-gray-50 rounded-xl text-center shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <i class="fa-solid fa-chart-line text-gold text-3xl mb-4"></i>
+                    <h4 class="font-bold text-jungle text-sm"> Fabric Exports</h4>
+                </div>
+                <div class="service-card p-8 bg-gray-50 rounded-xl text-center shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="300">
+                    <i class="fa-solid fa-comments text-gold text-3xl mb-4"></i>
+                    <h4 class="font-bold text-jungle text-sm">Trims & Accessories Exports</h4>
+                </div>
+                <div class="service-card p-8 bg-gray-50 rounded-xl text-center shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <i class="fa-solid fa-box-open text-gold text-3xl mb-4"></i>
+                    <h4 class="font-bold text-jungle text-sm">Stock Lot Exports</h4>
+                </div>
+                <div class="service-card p-8 bg-gray-50 rounded-xl text-center shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="500">
+                    <i class="fa-solid fa-handshake-angle text-gold text-3xl mb-4"></i>
+                    <h4 class="font-bold text-jungle text-sm">Relationship Management</h4>
+                </div>
+                <div class="service-card p-8 bg-gray-50 rounded-xl text-center shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="500">
+                    <!-- <i class="fa-solid fa-handshake-angle text-gold text-3xl mb-4"></i> -->
+                     <i class="fa-solid fa-users text-gold text-3xl mb-4"></i>
+                    <h4 class="font-bold text-jungle text-sm">Home Textile</h4>
+                </div>
+
+                <div class="service-card p-8 bg-gray-50 rounded-xl text-center shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="500">
+                    <!-- <i class="fa-solid fa-handshake-angle text-gold text-3xl mb-4"></i> -->
+                     <i class="fa-solid fa-bolt text-gold text-3xl mb-4"></i>
+                    <h4 class="font-bold text-jungle text-sm">Furniture Exports</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-dark-jungle text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-gold font-bold uppercase tracking-widest mb-4">Reliability</h2>
+                <h3 class="text-4xl font-bold mb-8">Why Choose Borderless Bounty?</h3>
+                <ul class="space-y-6">
+                    <li class="flex items-start space-x-4">
+                        <i class="fa-solid fa-check-double text-gold mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">8–10 Years Industry Experience</h4>
+                            <p class="text-gray-400">Deep rooted expertise in the global garment supply chain.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start space-x-4">
+                        <i class="fa-solid fa-check-double text-gold mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Direct Buyer Approach</h4>
+                            <p class="text-gray-400">No middlemen. We talk directly to the decision makers.</p>
+                        </div>
+                    </li>
+                    <!-- <li class="flex items-start space-x-4">
+                        <i class="fa-solid fa-check-double text-gold mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Transparent Commission Model</h4>
+                            <p class="text-gray-400">Clear 3% - 3.5% model with legal documentation support.</p>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <!--<div class="grid grid-cols-2 gap-4" data-aos="fade-left">-->
+            <!--    <div class="p-10 bg-jungle rounded-2xl text-center border border-white/10">-->
+            <!--        <div class="text-4xl font-bold text-gold mb-2">100%</div>-->
+            <!--        <p class="text-sm uppercase tracking-widest text-gray-300">Direct Sourcing</p>-->
+            <!--    </div>-->
+            <!--    <div class="p-10 bg-white/5 rounded-2xl text-center border border-white/10">-->
+            <!--        <div class="text-4xl font-bold text-gold mb-2">Global</div>-->
+            <!--        <p class="text-sm uppercase tracking-widest text-gray-300">Network</p>-->
+            <!--    </div>-->
+            <!--    <div class="p-10 bg-white/5 rounded-2xl text-center border border-white/10">-->
+            <!--        <div class="text-4xl font-bold text-gold mb-2">Legal</div>-->
+            <!--        <p class="text-sm uppercase tracking-widest text-gray-300">Bond Support</p>-->
+            <!--    </div>-->
+            <!--    <div class="p-10 bg-jungle rounded-2xl text-center border border-white/10">-->
+            <!--        <div class="text-4xl font-bold text-gold mb-2">Growth</div>-->
+            <!--        <p class="text-sm uppercase tracking-widest text-gray-300">Focused</p>-->
+            <!--    </div>-->
+            <!--</div>-->
+            <!--<div class="grid grid-cols-2 gap-4" data-aos="fade-left">-->
+            <!--    <div class="p-10 bg-jungle rounded-2xl text-center border border-white/10 flex flex-col items-center justify-center">-->
+            <!--        <i class="fa-solid fa-user-tie text-5xl text-gold mb-4"></i> <div class="text-4xl font-bold text-gold mb-2">100%</div>-->
+            <!--        <p class="text-sm uppercase tracking-widest text-gray-300">Direct Buyer Sourcing</p>-->
+            <!--    </div>-->
+
+            <!--    <div class="p-10 bg-white/5 rounded-2xl text-center border border-white/10 flex flex-col items-center justify-center">-->
+            <!--        <i class="fa-solid fa-globe text-5xl text-gold mb-4"></i> <div class="text-4xl font-bold text-gold mb-2">Global</div>-->
+            <!--        <p class="text-sm uppercase tracking-widest text-gray-300">Network</p>-->
+            <!--    </div>-->
+
+            <!--    <div class="p-10 bg-white/5 rounded-2xl text-center border border-white/10 flex flex-col items-center justify-center">-->
+            <!--        <i class="fa-solid fa-file-contract text-5xl text-gold mb-4"></i> <div class="text-4xl font-bold text-gold mb-2">Legal</div>-->
+            <!--        <p class="text-sm uppercase tracking-widest text-gray-300">Bond Support</p>-->
+            <!--    </div>-->
+
+            <!--    <div class="p-10 bg-jungle rounded-2xl text-center border border-white/10 flex flex-col items-center justify-center">-->
+            <!--        <i class="fa-solid fa-chart-line text-5xl text-gold mb-4"></i> <div class="text-4xl font-bold text-gold mb-2">Growth</div>-->
+            <!--        <p class="text-sm uppercase tracking-widest text-gray-300">Focused</p>-->
+            <!--    </div>-->
+            <!--</div>-->
+
+
+            <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+
+                <div
+                    class="relative p-10 rounded-2xl text-center border border-white/10 flex flex-col items-center justify-center overflow-hidden group bg-jungle">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-30 group-hover:scale-110 transition-transform duration-500"
+                        style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=600');">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-user-tie text-5xl text-gold mb-4 block"></i>
+                        <div class="text-4xl font-bold text-gold mb-2">100%</div>
+                        <p class="text-sm uppercase tracking-widest text-gray-100 font-semibold">Direct Buyer Sourcing
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="relative p-10 rounded-2xl text-center border border-white/10 flex flex-col items-center justify-center overflow-hidden group bg-white/5">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20 group-hover:scale-110 transition-transform duration-500"
+                        style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2959210?auto=format&fit=crop&q=80&w=600');">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-globe text-5xl text-gold mb-4 block"></i>
+                        <div class="text-4xl font-bold text-gold mb-2">Global</div>
+                        <p class="text-sm uppercase tracking-widest text-gray-200 font-semibold">Network</p>
+                    </div>
+                </div>
+
+                <div
+                    class="relative p-10 rounded-2xl text-center border border-white/10 flex flex-col items-center justify-center overflow-hidden group bg-white/5">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20 group-hover:scale-110 transition-transform duration-500"
+                        style="background-image: url('https://images.unsplash.com/photo-1454165833467-135248993621?auto=format&fit=crop&q=80&w=600');">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-file-contract text-5xl text-gold mb-4 block"></i>
+                        <div class="text-4xl font-bold text-gold mb-2">Legal</div>
+                        <p class="text-sm uppercase tracking-widest text-gray-200 font-semibold">Bond Support</p>
+                    </div>
+                </div>
+
+                <div
+                    class="relative p-10 rounded-2xl text-center border border-white/10 flex flex-col items-center justify-center overflow-hidden group bg-jungle">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-30 group-hover:scale-110 transition-transform duration-500"
+                        style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600');">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-chart-line text-5xl text-gold mb-4 block"></i>
+                        <div class="text-4xl font-bold text-gold mb-2">Growth</div>
+                        <p class="text-sm uppercase tracking-widest text-gray-100 font-semibold">Focused</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================
+     Workshop Gallery Section
+=========================== -->
+<section class="workshop-section">
+    <div class="workshop-container">
+
+        <div class="workshop-heading" data-aos="fade-up">
+            <span class="section-tag">Industry Engagement</span>
+
+            <h2>
+                Global Business Development Workshop
+            </h2>
+
+            <p>
+                Borderless Bounty Partners successfully conducted an insightful
+                workshop on <strong>Global Business Development</strong>,
+                sharing practical knowledge on international buyer sourcing,
+                export marketing strategies, and global garment business
+                opportunities for aspiring apparel professionals.
+            </p>
+        </div>
+
+        <div class="workshop-slider">
+
+            <button class="gallery-btn prev">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+
+            <div class="gallery-track">
+
+                <div class="gallery-item">
+                    <img src="images/workshop/workshop1.jpeg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/workshop/workshop2.jpeg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/workshop/workshop4.jpeg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/workshop/workshop3.jpeg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/workshop/workshop5.png" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/workshop/workshop6.png" alt="">
+                </div>
+
+            </div>
+
+            <button class="gallery-btn next">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-jungle mb-12">Industries We Serve</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="p-6 border border-gray-200 bg-white rounded-xl hover:border-gold hover:shadow-xl transition group"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-shirt text-4xl text-jungle mb-4 group-hover:text-gold transition"></i>
+                    <p class="font-bold text-sm">T-Shirts & Knitwear</p>
+                </div>
+                <div class="p-6 border border-gray-200 bg-white rounded-xl hover:border-gold hover:shadow-xl transition group"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-vest text-4xl text-jungle mb-4 group-hover:text-gold transition"></i>
+                    <p class="font-bold text-sm">Woven Garments</p>
+                </div>
+                <div class="p-6 border border-gray-200 bg-white rounded-xl hover:border-gold hover:shadow-xl transition group"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-child text-4xl text-jungle mb-4 group-hover:text-gold transition"></i>
+                    <p class="font-bold text-sm">Kids Wear</p>
+                </div>
+                <div class="p-6 border border-gray-200 bg-white rounded-xl hover:border-gold hover:shadow-xl transition group"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <i
+                        class="fa-solid fa-person-running text-4xl text-jungle mb-4 group-hover:text-gold transition"></i>
+                    <p class="font-bold text-sm">Sportswear</p>
+                </div>
+                <div class="p-6 border border-gray-200 bg-white rounded-xl hover:border-gold hover:shadow-xl transition group"
+                    data-aos="fade-up" data-aos-delay="500">
+                    <i class="fa-solid fa-gem text-4xl text-jungle mb-4 group-hover:text-gold transition"></i>
+                    <p class="font-bold text-sm">Fashion Apparel</p>
+                </div>
+                <div class="p-6 border border-gray-200 bg-white rounded-xl hover:border-gold hover:shadow-xl transition group"
+                    data-aos="fade-up" data-aos-delay="500">
+                    <i class="fa-solid fa-gem text-4xl text-jungle mb-4 group-hover:text-gold transition"></i>
+                    <p class="font-bold text-sm">Trims & Accessories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div
+            class="max-w-5xl mx-auto px-6 bg-jungle rounded-[30px] p-12 text-white flex flex-col md:row items-center justify-between shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-gold/10 rounded-full -mr-20 -mt-20"></div>
+            <div class="z-10 text-center md:text-left mb-8 md:mb-0">
+                <h2 class="text-3xl font-bold mb-4">Ready to Export Globally?</h2>
+                <p class="text-gray-300">Get in touch with us for a consultation today.</p>
+            </div>
+            <div class="z-10 flex flex-col md:flex-row gap-8 items-center">
+                <div class="text-center">
+                    <p class="text-gold text-xs uppercase font-bold mb-1">Email Us</p>
+                    <a href="mailto:borderlessbounty@gmail.com"
+                        class="text-lg hover:underline">info@borderlessbounty.com</a>
+                </div>
+                <div class="w-px h-12 bg-white/20 hidden md:block"></div>
+                <div class="text-center">
+                    <p class="text-gold text-xs uppercase font-bold mb-1">Call Us</p>
+                    <a href="tel:+916384070424" class="text-lg hover:underline">+91 6384070424 |</a>
+
+                    <a href="tel:+916384070425" class="text-lg hover:underline">+91 6384070425</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- <script>
+      // Footer-ah fetch panni placeholder-la add pannum
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    </script> -->
+    <script>
+        // Header Fetch & Menu Logic
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+
+                // Header load aanathukku apparam thaan intha logic work aagum
+                const menuBtn = document.getElementById('menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuIcon = document.getElementById('menu-icon');
+
+                if (menuBtn) {
+                    menuBtn.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('menu-open');
+
+                        if (mobileMenu.classList.contains('menu-open')) {
+                            menuIcon.classList.remove('fa-bars-staggered');
+                            menuIcon.classList.add('fa-xmark');
+                        } else {
+                            menuIcon.classList.remove('fa-xmark');
+                            menuIcon.classList.add('fa-bars-staggered');
+                        }
+                    });
+                }
+
+                // Mobile links-ai click panna menu close aagurathukku
+                document.querySelectorAll('.mobile-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.remove('menu-open');
+                        menuIcon.classList.replace('fa-xmark', 'fa-bars-staggered');
+                    });
+                });
+            });
+
+        // Footer Fetch (As usual)
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+    <!-- <script>
+        const track = document.querySelector(".gallery-track");
+
+document.querySelector(".next").onclick = () => {
+    track.scrollBy({
+        left:400,
+        behavior:"smooth"
+    });
+};
+
+document.querySelector(".prev").onclick = () => {
+    track.scrollBy({
+        left:-400,
+        behavior:"smooth"
+    });
+};
+    </script> -->
+
+    <script>
+        const track = document.querySelector(".gallery-track");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+const card = document.querySelector(".gallery-item");
+const gap = 25;
+const scrollAmount = card.offsetWidth + gap;
+
+// Next
+nextBtn.addEventListener("click", () => {
+    track.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth"
+    });
+});
+
+// Previous
+prevBtn.addEventListener("click", () => {
+    track.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth"
+    });
+});
+
+// Auto Slide
+function autoSlide() {
+
+    if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 5) {
+
+        track.scrollTo({
+            left: 0,
+            behavior: "smooth"
+        });
+
+    } else {
+
+        track.scrollBy({
+            left: scrollAmount,
+            behavior: "smooth"
+        });
+
+    }
+
+}
+
+let slider = setInterval(autoSlide, 3000);
+
+// Pause on Hover
+track.addEventListener("mouseenter", () => {
+    clearInterval(slider);
+});
+
+track.addEventListener("mouseleave", () => {
+    slider = setInterval(autoSlide, 3000);
+});
+    </script>
+</body>
+
+</html>

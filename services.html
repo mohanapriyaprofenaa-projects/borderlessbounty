@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Borderless Bounty Partners</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root { --jungle-green: #004d40; --gold: #c5a059; --dark-teal: #002e26; }
+        .bg-jungle { background-color: var(--jungle-green); }
+        .text-gold { color: var(--gold); }
+        .border-gold { border-color: var(--gold); }
+        .bg-dark-teal { background-color: var(--dark-teal); }
+        
+        /* Updated Premium Card Styling */
+        .service-card { 
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .service-card:hover { transform: translateY(-15px); }
+        .service-card-img {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.8s ease;
+            z-index: 0;
+        }
+        .service-card:hover .service-card-img { transform: scale(1.1); }
+        .service-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,77,64,0.95) 20%, rgba(0,77,64,0.4) 100%);
+            z-index: 1;
+        }
+        .service-content {
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+            color: white;
+        }
+
+        .process-dot { width: 12px; height: 12px; background: var(--gold); border-radius: 50%; position: relative; }
+        .process-dot::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 24px; height: 24px; border: 2px solid var(--gold); border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: translate(-50%, -50%) scale(1); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(2); opacity: 0; } }
+        
+        /* Mobile Menu Animation Helper */
+        .menu-open { transform: translateY(0) !important; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans overflow-x-hidden">
+
+    <div id="header-placeholder"></div>
+
+    <section class="bg-dark-teal py-24 text-center text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://www.transparenttextures.com/patterns/carbon-fibre.png" class="w-full h-full">
+        </div>
+        <div class="relative z-10" data-aos="fade-down">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Strategic Export <span class="text-gold">Solutions</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto px-6">From initial buyer sourcing to final order confirmation, we provide end-to-end support for garment manufacturers.</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="service-card rounded-2xl shadow-xl" data-aos="fade-up">
+                <div class="service-card-img" style="background-image: url('international.jpeg');"></div>
+                <div class="service-card-overlay"></div>
+                <div class="service-content">
+                    <i class="fa-solid fa-magnifying-glass-chart text-3xl text-gold mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">International Buyer Sourcing</h3>
+                    <p class="text-gray-200 text-sm leading-relaxed">Identifying and validating genuine global buyers, cutting middlemen to connect factories directly with the source.</p>
+                </div>
+            </div>
+
+            <div class="service-card rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card-img" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2959210?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="service-card-overlay"></div>
+                <div class="service-content">
+                    <i class="fa-solid fa-handshake text-3xl text-gold mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Global Business Representation</h3>
+                    <p class="text-gray-200 text-sm leading-relaxed">We act as your brand's voice in foreign territories, handling professional communication under your brand name.</p>
+                </div>
+            </div>
+
+            <div class="service-card rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card-img" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="service-card-overlay"></div>
+                <div class="service-content">
+                    <i class="fa-solid fa-calendar-check text-3xl text-gold mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Buyer Meeting Coordination</h3>
+                    <p class="text-gray-200 text-sm leading-relaxed">Scheduling and facilitating high-level strategic meetings between manufacturers and international buyers.</p>
+                </div>
+            </div>
+
+            <div class="service-card rounded-2xl shadow-xl" data-aos="fade-up">
+                <div class="service-card-img" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="service-card-overlay"></div>
+                <div class="service-content">
+                    <i class="fa-solid fa-diagram-project text-3xl text-gold mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Export Order Development</h3>
+                    <ul class="text-gray-300 text-xs space-y-1 mt-2">
+                        <li>• Price Negotiation & Confirmation</li>
+                        <li>• Sample Development Tracking</li>
+                        <li>• Technical Specification Management</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card-img" style="background-image: url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="service-card-overlay"></div>
+                <div class="service-content">
+                    <i class="fa-solid fa-infinity text-3xl text-gold mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Long-Term Buyer Loyalty</h3>
+                    <p class="text-gray-200 text-sm leading-relaxed">Fostering repeat business through continuous relationship management and buyer satisfaction protocols.</p>
+                </div>
+            </div>
+
+            <div class="service-card rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="service-card-overlay"></div>
+                <div class="service-content">
+                    <i class="fa-solid fa-bullhorn text-3xl text-gold mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Export Marketing Support</h3>
+                    <p class="text-gray-200 text-sm leading-relaxed">Strategic brand positioning and direct digital outreach to specialized garment importers worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-jungle py-24 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-down">
+                <h2 class="text-3xl md:text-4xl font-bold">Our Professional Process</h2>
+                <!-- <p class="text-gold mt-2 uppercase tracking-widest font-semibold">Timeline: 120 -150 Days</p> -->
+            </div>
+
+            <div class="relative space-y-12 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gold before:to-transparent">
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group" data-aos="fade-right">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-jungle text-gold font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">01</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-xl bg-white/5 border border-white/10 shadow-xl transition hover:bg-white/10">
+                        <h4 class="font-bold text-gold mb-2 text-xl">Assessment</h4>
+                        <p class="text-gray-300">Understand your company profile and product details to align with global market demands.</p>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group" data-aos="fade-left">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-jungle text-gold font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">02</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-xl bg-white/5 border border-white/10 shadow-xl transition hover:bg-white/10">
+                        <h4 class="font-bold text-gold mb-2 text-xl">Global Outreach</h4>
+                        <p class="text-gray-300">Approach international buyers professionally under your own company name.</p>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group" data-aos="fade-right">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-jungle text-gold font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">03</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-xl bg-white/5 border border-white/10 shadow-xl transition hover:bg-white/10">
+                        <h4 class="font-bold text-gold mb-2 text-xl">Presentation</h4>
+                        <p class="text-gray-300">Showcase your factory capabilities and product excellence to target buyers.</p>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group" data-aos="fade-left">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-jungle text-gold font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">04</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-xl bg-white/5 border border-white/10 shadow-xl transition hover:bg-white/10">
+                        <h4 class="font-bold text-gold mb-2 text-xl">Coordination</h4>
+                        <p class="text-gray-300">Arrange high-level meetings and discussions between the factory and the buyer.</p>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group" data-aos="fade-right">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-jungle text-gold font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">05</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-xl bg-white/5 border border-white/10 shadow-xl transition hover:bg-white/10">
+                        <h4 class="font-bold text-gold mb-2 text-xl">Confirmation</h4>
+                        <p class="text-gray-300">Continuous follow-up and negotiation until the final order is confirmed.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <p class="text-center mt-16 text-gray-400 italic">Note: After order confirmation, buyer and exporter can continue direct communication for all future business.</p> -->
+        </div>
+    </section>
+
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="bg-white p-12 rounded-[2rem] shadow-lg border-b-8 border-gold" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-jungle mb-6 flex items-center">
+                    <i class="fa-solid fa-hand-holding-dollar text-gold mr-3"></i> Terms & Conditions
+                </h3>
+                <ul class="space-y-4 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="bg-gold/20 text-gold font-bold px-2 py-1 rounded mr-3 text-xs">COMMISSION</span>
+                        <p> service charge on each confirmed order generated through our network.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-gold/20 text-gold font-bold px-2 py-1 rounded mr-3 text-xs">EXPENSES</span>
+                        <p>International marketing expenses (travel, meetings, etc.) supported by the manufacturer as mutually agreed.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-gold/20 text-gold font-bold px-2 py-1 rounded mr-3 text-xs">LEGAL</span>
+                        <p>Terms can be legally documented through a <b>government bond agreement</b> for total transparency and safety.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-dark-teal p-12 rounded-[2rem] shadow-lg text-white" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-2xl font-bold text-gold mb-6 flex items-center">
+                    <i class="fa-solid fa-folder-open mr-3"></i> Documents Required
+                </h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10">
+                        <i class="fa-solid fa-building text-gold mr-4"></i> Company Profile
+                    </div>
+                    <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10">
+                        <i class="fa-solid fa-images text-gold mr-4"></i> Product Catalogue
+                    </div>
+                    <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10">
+                        <i class="fa-solid fa-id-card text-gold mr-4"></i> Business Card
+                    </div>
+                    <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10">
+                        <i class="fa-solid fa-display text-gold mr-4"></i> Company Website
+                    </div>
+                    <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10">
+                        <i class="fa-solid fa-file-powerpoint text-gold mr-4"></i> Company Presentation (PPT)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                // Initialize Mobile Menu from loaded header
+                setTimeout(() => {
+                    const menuBtn = document.getElementById('menu-btn');
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    const menuIcon = document.getElementById('menu-icon');
+                    if (menuBtn && mobileMenu) {
+                        menuBtn.onclick = function() {
+                            mobileMenu.classList.toggle('menu-open');
+                            menuIcon.className = mobileMenu.classList.contains('menu-open') ? 
+                                'fa-solid fa-xmark text-[#c5a059]' : 'fa-solid fa-bars-staggered text-[#c5a059]';
+                        };
+                    }
+                }, 100);
+            });
+
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

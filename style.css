@@ -1,0 +1,213 @@
+/*==============================
+ Workshop Gallery
+===============================*/
+
+.workshop-section{
+    padding:100px 0;
+    /* background:#002e26; */
+    background:#004d40;
+    overflow:hidden;
+}
+
+.workshop-container{
+    width:min(1200px,92%);
+    margin:auto;
+}
+
+.workshop-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-tag{
+
+    display:inline-block;
+    color:#c5a059;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-weight:700;
+    margin-bottom:18px;
+
+}
+
+.workshop-heading h2{
+
+    color:#fff;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:20px;
+
+}
+
+.workshop-heading p{
+
+    max-width:900px;
+    margin:auto;
+    color:#d7d7d7;
+    line-height:1.9;
+    font-size:17px;
+
+}
+
+.workshop-heading strong{
+
+    color:#c5a059;
+
+}
+
+.workshop-slider{
+
+    position:relative;
+
+}
+
+.gallery-track{
+
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+    padding:10px;
+
+}
+/* .gallery-track{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+} */
+
+.gallery-track::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.gallery-item{
+
+    flex:0 0 370px;
+    border-radius:20px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+    transition:.4s;
+
+}
+
+.gallery-item:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.gallery-item img{
+
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.gallery-btn{
+
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#c5a059;
+    color:#fff;
+    cursor:pointer;
+    z-index:10;
+    transition:.3s;
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+
+.gallery-btn:hover{
+
+    background:#fff;
+    color:#004d40;
+
+}
+
+.gallery-btn.prev{
+
+    left:-25px;
+
+}
+
+.gallery-btn.next{
+
+    right:-25px;
+
+}
+
+.gallery-btn i{
+
+    font-size:18px;
+
+}
+
+@media(max-width:992px){
+
+.gallery-item{
+
+    flex:0 0 320px;
+
+}
+
+.gallery-item img{
+
+    height:400px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.workshop-section{
+
+    padding:70px 0;
+
+}
+
+.workshop-heading h2{
+
+    font-size:32px;
+
+}
+
+.gallery-item{
+
+    flex:0 0 280px;
+
+}
+
+.gallery-item img{
+
+    height:340px;
+
+}
+
+.gallery-btn{
+
+    display:none;
+
+}
+
+}
